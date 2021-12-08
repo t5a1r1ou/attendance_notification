@@ -1,14 +1,30 @@
 {
-  "hosting": {
-    "public": "./",
-    "rewrites": [{
-        "source": "/webhook",
-        "function": "app"
-    }],
-    "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
+    "hosting": [
+        {
+            "target": "api",
+            "public": "./api/",
+            "rewrites": [{
+                "source": "/webhook",
+                "function": "app"
+            }],
+            "ignore": [
+                "firebase.json",
+                "**/.*",
+                "**/node_modules/**"
+            ]
+        },
+        {
+            "target": "liff",
+            "public": "./liff/build/",
+            "rewrites": [{
+                "source": "/webhook",
+                "function": "app"
+            }],
+            "ignore": [
+                "firebase.json",
+                "**/.*",
+                "**/node_modules/**"
+            ]
+        }
     ]
-}
 }

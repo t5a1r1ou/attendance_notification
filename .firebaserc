@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "attendancenotification-22674"
+  },
+  "targets": {
+    "attendancenotification-22674": {
+      "hosting": {
+        "api": [
+          "attendancenotification-22674"
+        ],
+        "liff": [
+          "liff-attendancenotification"
+        ]
+      }
+    }
   }
 }
